@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Погнали - Формы</title>
+  </head>
+  <body class="page__body">
+    <header class="page__header">
+      <div class="container">
+        <div class="logo">
+          <a class="logo__link">
+            <img src="https://via.placeholder.com/96x15" alt="Логотип сайта «Погнали?»" width="96" height="15">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#"><span class="visually-hidden">Позвонить нам</span></a>
+            </li>
+            <li class="user-list__item">
+              <a href="#"><span class="visually-hidden">Написать нам</span></a>
+            </li>
+            <li class="user-list__item">
+              <a href="#"><span class="visually-hidden">Авторизация</span></a>
+            </li>
+          </ul>
+          <ul class="main-nav__list social-list">
+            <li class="social-list__item">
+              <a href="#"><span class="visually-hidden">Мы в Facebook</span></a></li>
+            <li class="social-list__item">
+              <a href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#"><span class="visually-hidden">Мы в Инстаграмме</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="page__title">
+        Направления
+      </h1>
+      <section class="profile">
+        <h2 class="visually-hidden">
+          Редактирование профиля
+        </h2>
+        <div class="level">
+          <span class="level__number">80</span>
+          <span class="level__text">level</span>
+        </div>
+        <div class="profile__photo">
+          <img src="https://via.placeholder.com/100x100" alt="Фото профиля" width="100" height="100">
+        </div>
+        <button type="profile__button">
+          Сменить Фото
+        </button>
+        <div class="profile__tags">
+          <textarea name="profile-tags">#бургер #бар #футбол #концерт #крафт</textarea>
+        </div>
+        <ul class="profile__transport-list">
+          <li class="profile__transport-item">
+            <button class="profile__transport-button"></button>
+          </li>
+          <li class="profile__transport-item">
+            <button class="profile__transport-button"></button>
+          </li>
+          <li class="profile__transport-item">
+            <button class="profile__transport-button"></button>
+          </li>
+          <li class="profile__transport-item">
+            <button class="profile__transport-button"></button>
+          </li>
+        </ul>
+      </section>
+      <section class="plans">
+        <h2 class="plans__title">
+          Мои планы:
+        </h2>
+        <ol class="plans__list">
+          <li class="plans__item">
+            <h3 class="plans__sub-title">
+              Франция, Италия
+            </h3>
+            <p class="plans__travelers">
+              3 Попутчика
+            </p>
+            <p class="plans__date">
+              26 МАР - 29 МАР
+            </p>
+            <button class="plans__button">
+
+            </button>
+          </li>
+          <li class="plans__item">
+            <h3 class="plans__sub-title">
+              Таиланд, Индонезия
+            </h3>
+            <p class="plans__travelers">
+              1 попутчик
+            </p>
+            <p class="plans__date">
+              1 июл — 15 июл
+            </p>
+            <button class="plans__button">
+
+            </button>
+          </li>
+        </ol>
+      </section>
+      <section class="plans-add">
+        <h2 class="plans-add__title">
+          Добавить план:
+        </h2>
+        <ol class="plans-add__list">
+          <li class="plans-add__item">
+            <h3 class="plans-add__sub-title">
+              Шаг 1. Даты пребывания
+            </h3>
+            <p class="plans-add__text">
+              Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+            </p>
+            <p class="plans-add__quantity">
+              <label for="quantity-travelers-field">ищу попутчиков:</label>
+              <span class="plans-add__quantity-description">чел.</span>
+              <input type="number" id="quantity-travelers-field" name="quantity-travelers">
+            </p>
+            <p class="plans-add__quantity">
+              <label for="quantity-days-field"> длительность:</label>
+              <span class="plans-add__quantity-description">дн.</span>
+              <input type="number" id="quantity-days-field" name="quantity-days">
+            </p>
+            <p class="plan-add__children-field">
+              <input type="checkbox" name="children" id="children-field">
+              <label for="children-field">Можно с детьми</label>
+            </p>
+            <p class="plans-add__mounth">
+              Март 2019
+            </p>
+            <table class="plans-add__calendar">
+              <tr class="plans-add__calendar-line">
+                <th class="plans-add__calendar-heading">П</th>
+                <th class="plans-add__calendar-heading">В</th>
+                <th class="plans-add__calendar-heading">С</th>
+                <th class="plans-add__calendar-heading">Ч</th>
+                <th class="plans-add__calendar-heading">П</th>
+                <th class="plans-add__calendar-heading">С</th>
+                <th class="plans-add__calendar-heading">В</th>
+              </tr>
+              <tr class="plans-add__calendar-line">
+                <td class="plans-add__calendar-item">23</td>
+                <td class="plans-add__calendar-item">24</td>
+                <td class="plans-add__calendar-item">25</td>
+                <td class="plans-add__calendar-item">26</td>
+                <td class="plans-add__calendar-item">27</td>
+                <td class="plans-add__calendar-item">28</td>
+                <td class="plans-add__calendar-item">1</td>
+              </tr>
+              <tr class="plans-add__calendar-line">
+                <td class="plans-add__calendar-item">2</td>
+                <td class="plans-add__calendar-item">3</td>
+                <td class="plans-add__calendar-item">4</td>
+                <td class="plans-add__calendar-item">5</td>
+                <td class="plans-add__calendar-item">6</td>
+                <td class="plans-add__calendar-item">7</td>
+                <td class="plans-add__calendar-item">8</td>
+              </tr>
+              <tr class="plans-add__calendar-line">
+                <td class="plans-add__calendar-item">9</td>
+                <td class="plans-add__calendar-item">10</td>
+                <td class="plans-add__calendar-item">11</td>
+                <td class="plans-add__calendar-item">12</td>
+                <td class="plans-add__calendar-item">13</td>
+                <td class="plans-add__calendar-item">14</td>
+                <td class="plans-add__calendar-item">15</td>
+              </tr>
+              <tr class="plans-add__calendar-line">
+                <td class="plans-add__calendar-item">16</td>
+                <td class="plans-add__calendar-item">17</td>
+                <td class="plans-add__calendar-item">18</td>
+                <td class="plans-add__calendar-item">19</td>
+                <td class="plans-add__calendar-item">20</td>
+                <td class="plans-add__calendar-item">21</td>
+                <td class="plans-add__calendar-item">22</td>
+              </tr>
+              <tr class="plans-add__calendar-line">
+                <td class="plans-add__calendar-item">23</td>
+                <td class="plans-add__calendar-item">24</td>
+                <td class="plans-add__calendar-item">25</td>
+                <td class="plans-add__calendar-item">26</td>
+                <td class="plans-add__calendar-item">27</td>
+                <td class="plans-add__calendar-item">28</td>
+                <td class="plans-add__calendar-item">29</td>
+              </tr>
+              <tr class="plans-add__calendar-line">
+                <td class="plans-add__calendar-item">30</td>
+                <td class="plans-add__calendar-item">31</td>
+                <td class="plans-add__calendar-item">1</td>
+                <td class="plans-add__calendar-item">2</td>
+                <td class="plans-add__calendar-item">3</td>
+                <td class="plans-add__calendar-item">4</td>
+                <td class="plans-add__calendar-item">5</td>
+              </tr>
+            </table>
+            <p class="plans-add__next-button">
+              <a href="#">Следующий шаг</a>
+            </p>
+          </li>
+          <li class="plans-add__item">
+            <h3>
+              Шаг 2. Маршрут
+            </h3>
+            <p class="plans-add__text">
+              Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+            </p>
+            <p class="plans-add__country-added">
+              Босния и герцеговина
+            </p>
+            <p class="plans-add__country-added">
+              Чехия
+            </p>
+            <p class="plans-add__country-choose">
+              <button class="plans-add__choose-country-button">Выберите страну</button>
+              <div class="plans-add__choose-country-filter">
+                <table class="plans-add__choose-country-table">
+                  <tr class="plans-add__choose-country-table-line">
+                    <td class="plans-add__choose-country-table-item">А</td>
+                    <td class="plans-add__choose-country-table-item">Б</td>
+                    <td class="plans-add__choose-country-table-item">В</td>
+                    <td class="plans-add__choose-country-table-item">Г</td>
+                    <td class="plans-add__choose-country-table-item">Д</td>
+                  </tr>
+                  <tr class="plans-add__choose-country-table-line">
+                    <td class="plans-add__choose-country-table-item">Е</td>
+                    <td class="plans-add__choose-country-table-item">З</td>
+                    <td class="plans-add__choose-country-table-item">И</td>
+                    <td class="plans-add__choose-country-table-item">К</td>
+                    <td class="plans-add__choose-country-table-item">Л</td>
+                  </tr>
+                  <tr class="plans-add__choose-country-table-line">
+                    <td class="plans-add__choose-country-table-item">М</td>
+                    <td class="plans-add__choose-country-table-item">Н</td>
+                    <td class="plans-add__choose-country-table-item">О</td>
+                    <td class="plans-add__choose-country-table-item">П</td>
+                    <td class="plans-add__choose-country-table-item">Р</td>
+                  </tr>
+                  <tr class="plans-add__choose-country-table-line">
+                    <td class="plans-add__choose-country-table-item">С</td>
+                    <td class="plans-add__choose-country-table-item">Т</td>
+                    <td class="plans-add__choose-country-table-item">У</td>
+                    <td class="plans-add__choose-country-table-item">Ф</td>
+                    <td class="plans-add__choose-country-table-item">Х</td>
+                  </tr>
+                  <tr class="plans-add__choose-country-table-line">
+                    <td class="plans-add__choose-country-table-item">Ч</td>
+                    <td class="plans-add__choose-country-table-item">Ш</td>
+                    <td class="plans-add__choose-country-table-item">Щ</td>
+                    <td class="plans-add__choose-country-table-item">Э</td>
+                    <td class="plans-add__choose-country-table-item">Ю</td>
+                  </tr>
+                </table>
+                <ul class="plans-add__choose-country-table-list">
+                  <li class="plans-add__choose-country-table-item">
+                    Австралия
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Австрия
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Азербайджан
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Албания
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Алжир
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Ангола
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Андорра
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Антигуа и Барбуда
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Аргентина
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Армения
+                  </li>
+                  <li class="plans-add__choose-country-table-item">
+                    Афганистан
+                  </li>
+                </ul>
+              </div>
+            </p>
+            <p class="plans-add__country-add">
+              <button class="plans-add__country-add-button">
+                Добавить страну
+              </button>
+            </p>
+            <p class="plans-add__next-button">
+              <a href="#">Следующий шаг</a>
+            </p>
+            <p class="plans-add__back-button">
+              <a href="#">На шаг назад</a>
+            </p>
+          </li>
+          <li class="plans-add__item">
+            <h3 class="plans-add__sub-title">
+              Шаг 3. Развлечения
+            </h3>
+            <p class="plans-add__text">
+              Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+            </p>
+            <p class="plans-add__pastime-country">
+              <label for="country-textarea-field">Босния и Герцеговина</label>
+              <textarea name="country-textarea" id="country-textarea-field" placeholder="План действий"></textarea>
+            </p>
+            <p class="plans-add__pastime-country">
+              <label for="country-textarea-field">Чехия</label>
+              <textarea name="country-textarea" id="country-textarea-field" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            </p>
+            <p class="plans-add__next-button">
+              <a href="#">Следующий шаг</a>
+            </p>
+            <p class="plans-add__back-button">
+              <a href="#">На шаг назад</a>
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer class="page__footer">
+      <div class="logo">
+        <a class="logo__link">
+          <img src="https://via.placeholder.com/96x15" alt="Логотип сайта «Погнали?»" width="96" height="15">
+        </a>
+      </div>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#"><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#"><span class="visually-hidden">Инстаграмм</span></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p class="copyright__text">
+          Разработано
+        </p>
+        <div class="copyright__htmlacademy">
+          <a href="https://htmlacademy.ru"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
